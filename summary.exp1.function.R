@@ -20,6 +20,7 @@ summary.exp1<-function(stats.in,
                        n.clusters,
                        plot.title,
                        pdf.file){
+  par(mfrow=c(1,1))
   sub.data<-stats.in[stats.in[,1] %in% categories,c("main.model.categories","PACID",tstat.type)]
   
   dist.t<-dist(sub.data[,tstat.type])
